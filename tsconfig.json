@@ -1,0 +1,12 @@
+{
+  "exclude": [
+    "packages/**/build/**",
+    "packages/**/dist/**",
+    "packages/**/tests/**"
+ ],
+  "references": [
+   {
+      "path": "./packages/kindelia"
+   }
+ ]
+}
