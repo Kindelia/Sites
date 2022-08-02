@@ -1,6 +1,18 @@
 ~*
 
-/packages/*/build
+/packages/*/dist
+
+# Yarn Berry
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# TypeScript
+tsconfig.tsbuildinfo
 
 # Node.js
 node_modules
