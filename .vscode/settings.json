@@ -1,13 +1,16 @@
 {
-  "cSpell.words": [
-    "mailchimp",
-    "rustie",
-    "zustand"
-  ],
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
   },
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "cSpell.words": [
+    "mailchimp",
+    "rustie",
+    "zustand"
+  ],
+  "cSpell.ignoreWords": [
+    "tsbuildinfo"
+  ]
 }
