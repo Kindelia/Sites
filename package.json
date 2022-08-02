@@ -6,6 +6,9 @@
     "apps/*",
     "packages/*"
   ],
+  "scripts": {
+    "clean": "rm -r ./**/*.tsbuildinfo ./packages/*/dist | true"
+  },
   "devDependencies": {
     "typescript": "^4.7.4"
   }

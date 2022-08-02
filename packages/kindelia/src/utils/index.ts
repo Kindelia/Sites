@@ -1,3 +1,8 @@
+// Re-exports
+
+export * as hex from './hex'
+export * as functional from './functional'
+
 // Types
 // =====
 

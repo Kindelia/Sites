@@ -1022,6 +1022,7 @@ __metadata:
     "@types/react-dom": 18.0.6
     eslint: 8.21.0
     eslint-config-next: 12.2.3
+    kindelia: 0.1.1
     next: 12.2.3
     react: 18.2.0
     react-dom: 18.2.0
@@ -1581,7 +1582,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"kindelia@workspace:packages/kindelia":
+"kindelia@0.1.1, kindelia@workspace:packages/kindelia":
   version: 0.0.0-use.local
   resolution: "kindelia@workspace:packages/kindelia"
   dependencies:
