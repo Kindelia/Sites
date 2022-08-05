@@ -29,7 +29,7 @@
   ],
   "references": [
     {
-      "path": "../../packages/kindelia"
+      "path": "../../packages/node-api"
     }
   ]
 }

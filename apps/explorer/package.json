@@ -9,7 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "kindelia": "0.1.1",
+    "@kindelia/node-api": "*",
+    "@kindelia/shared": "*",
     "next": "12.2.3",
     "next-transpile-modules": "^9.0.0",
     "react": "18.2.0",

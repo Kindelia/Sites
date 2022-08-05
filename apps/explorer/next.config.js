@@ -1,17 +1,12 @@
 /** @type {import('next').NextConfig} */
 
-// const withTM = require('next-transpile-modules')(['kindelia'], {
-//   debug: true,
-// });
+const withTM = require('next-transpile-modules')(['@kindelia/shared'], {
+  // debug: true,
+});
 
-// const nextConfig = withTM({
-//   reactStrictMode: true,
-//   swcMinify: true,
-// })
-
-const nextConfig = {
+const nextConfig = withTM({
   reactStrictMode: true,
   swcMinify: true,
-}
+})
 
 module.exports = nextConfig

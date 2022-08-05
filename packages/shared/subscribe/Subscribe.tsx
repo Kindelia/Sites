@@ -1,8 +1,8 @@
 import { FC, FormEventHandler, HTMLAttributes, useRef } from 'react'
-
-import { Button } from '../ui/Button'
 import classnames from 'classnames'
 
+
+import { Button } from '../Button'
 import { useMailchimp } from './useMailchimp'
 
 interface SubscribeProps extends HTMLAttributes<HTMLFormElement> {}

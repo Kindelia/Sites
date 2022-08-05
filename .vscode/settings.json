@@ -1,4 +1,5 @@
 {
+  "files.insertFinalNewline": true,
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true

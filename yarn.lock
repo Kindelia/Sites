@@ -66,6 +66,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@kindelia/node-api@*, @kindelia/node-api@workspace:packages/node-api":
+  version: 0.0.0-use.local
+  resolution: "@kindelia/node-api@workspace:packages/node-api"
+  dependencies:
+    axios: ^0.27.2
+    rustie: ^0.2.0
+    typescript: ^4.7.4
+  languageName: unknown
+  linkType: soft
+
+"@kindelia/shared@*, @kindelia/shared@workspace:packages/shared":
+  version: 0.0.0-use.local
+  resolution: "@kindelia/shared@workspace:packages/shared"
+  dependencies:
+    "@types/react": ^18.0.15
+    axios: ^0.27.2
+    classnames: ^2.3.1
+    react: ^18.2.0
+    typescript: ^4.7.4
+    zustand: ^4.0.0
+  languageName: unknown
+  linkType: soft
+
 "@next/env@npm:12.2.3":
   version: 12.2.3
   resolution: "@next/env@npm:12.2.3"
@@ -223,7 +246,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.6.3, @types/node@npm:^18.6.3":
+"@types/node@npm:18.6.3":
   version: 18.6.3
   resolution: "@types/node@npm:18.6.3"
   checksum: 38495b8fd27200d2b7ab9ccd8c1e2475d2411fba15330f2cba869a85ef79dd42382a2658c8dd298ace8c21ed3bfafcdea408faecd74928b144377d07d00e7c8c
@@ -515,9 +538,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001332":
-  version: 1.0.30001373
-  resolution: "caniuse-lite@npm:1.0.30001373"
-  checksum: cd2f027e2fcf66ed3b0e3eccec89df871f951f2e7600944fae2c3f6f1c37ac82392e573c279e15bf851b75f9696472e38d33fd52d964819ffb8af7af4078ceba
+  version: 1.0.30001374
+  resolution: "caniuse-lite@npm:1.0.30001374"
+  checksum: a75656e971d7ef2af4d2f3529a4620ae1a45d09460601fbc34b26f6867f31bbca006f71d8840291c471a2f01fc1994044f319a5660241ffaf35a2d84535af442
   languageName: node
   linkType: hard
 
@@ -1034,12 +1057,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "explorer@workspace:apps/explorer"
   dependencies:
+    "@kindelia/node-api": "*"
+    "@kindelia/shared": "*"
     "@types/node": 18.6.3
     "@types/react": 18.0.15
     "@types/react-dom": 18.0.6
     eslint: 8.21.0
     eslint-config-next: 12.2.3
-    kindelia: 0.1.1
     next: 12.2.3
     next-transpile-modules: ^9.0.0
     react: 18.2.0
@@ -1437,11 +1461,11 @@ __metadata:
   linkType: hard
 
 "is-core-module@npm:^2.8.1, is-core-module@npm:^2.9.0":
-  version: 2.9.0
-  resolution: "is-core-module@npm:2.9.0"
+  version: 2.10.0
+  resolution: "is-core-module@npm:2.10.0"
   dependencies:
     has: ^1.0.3
-  checksum: b27034318b4b462f1c8f1dfb1b32baecd651d891a4e2d1922135daeff4141dfced2b82b07aef83ef54275c4a3526aa38da859223664d0868ca24182badb784ce
+  checksum: 0f3f77811f430af3256fa7bbc806f9639534b140f8ee69476f632c3e1eb4e28a38be0b9d1b8ecf596179c841b53576129279df95e7051d694dac4ceb6f967593
   languageName: node
   linkType: hard
 
@@ -1603,20 +1627,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "kindelia-sites@workspace:."
   dependencies:
-    typescript: ^4.7.4
-  languageName: unknown
-  linkType: soft
-
-"kindelia@0.1.1, kindelia@workspace:packages/kindelia":
-  version: 0.0.0-use.local
-  resolution: "kindelia@workspace:packages/kindelia"
-  dependencies:
-    "@types/node": ^18.6.3
-    "@types/react": ^18.0.15
     axios: ^0.27.2
     classnames: ^2.3.1
     react: ^18.2.0
-    rustie: ^0.2.0
     typescript: ^4.7.4
     zustand: ^4.0.0
   languageName: unknown
