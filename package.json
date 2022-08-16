@@ -1,21 +1,21 @@
 {
-  "name": "kindelia-sites",
-  "packageManager": "yarn@3.2.2",
   "private": true,
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
   "scripts": {
-    "clean": "rm -r ./**/*.tsbuildinfo ./packages/*/dist | true"
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "typescript": "^4.7.4"
-  },
-  "dependencies": {
-    "axios": "^0.27.2",
-    "classnames": "^2.3.1",
-    "react": "^18.2.0",
-    "zustand": "^4.0.0"
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "*",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.11",
+    "turbo": "latest"
   }
 }
