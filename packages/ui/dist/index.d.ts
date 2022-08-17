@@ -5,4 +5,6 @@ declare type SVGProps = {
 };
 declare function SVG({ type }: SVGProps): JSX.Element;
 
-export { Button, SVG };
+declare function Footer(): JSX.Element;
+
+export { Button, Footer, SVG };

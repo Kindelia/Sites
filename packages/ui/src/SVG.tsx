@@ -128,10 +128,10 @@ function DiscordSVG(): JSX.Element {
 }
 
 type SVGProps = {
-  type: "logo" | "kind2" | "github" | "twitter" | "youtube" | "discord";
+  type: 'logo' | 'kind2' | 'github' | 'twitter' | 'youtube' | 'discord';
 };
 
-export function SVG({ type }: SVGProps): JSX.Element {
+export function SVG({type}: SVGProps): JSX.Element {
   return {
     logo: <LogoSVG />,
     kind2: <Kind2SVG />,

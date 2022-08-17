@@ -1,4 +1,4 @@
-import { SVG } from "ui";
+import {SVG} from 'ui';
 
 export interface MenuItem {
   label: string;
@@ -10,10 +10,8 @@ export interface MenuProps {
   items: MenuItem[];
 }
 
-export function Menu(
-  props: MenuProps
-): JSX.Element {
-  const { items } = props;
+export function Menu(props: MenuProps): JSX.Element {
+  const {items} = props;
 
   return (
     <div className="flex flex-row gap-10">

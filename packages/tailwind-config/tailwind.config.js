@@ -1,4 +1,4 @@
-const colors = require("tailwindcss/colors");
+const colors = require('tailwindcss/colors');
 
 module.exports = {
   content: [
@@ -12,8 +12,8 @@ module.exports = {
       colors: {
         brandblue: colors.blue[500],
         brandred: colors.red[500],
-        mineshaft: "#393939",
-        springwood: "#F7F3F0",
+        mineshaft: '#393939',
+        springwood: '#F7F3F0',
       },
     },
   },
