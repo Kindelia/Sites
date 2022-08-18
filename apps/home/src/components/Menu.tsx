@@ -17,9 +17,8 @@ export function Menu(props: MenuProps): JSX.Element {
     <div className="flex flex-row gap-10">
       {items.map((menu, index) => (
         <div
-          className="bg-mineshaft border-[1px solid #F7F3F026] flex h-[300px] w-[221px] cursor-pointer flex-col rounded-lg pt-5"
-          key={index}
-        >
+          className="bg-mineshaft border-mineshaft flex h-[300px] w-[221px] cursor-pointer flex-col rounded-lg border pt-5 hover:border-white"
+          key={index}>
           <h1 className="text-springwood text-center text-3xl font-semibold tracking-wider">
             {menu.label}
           </h1>

@@ -7,26 +7,27 @@ import Document, {
   NextScript,
 } from 'next/document';
 
-class MyDocument extends Document {
+export default class MyDocument extends Document {
   static async getInitialProps(
     ctx: DocumentContext,
   ): Promise<DocumentInitialProps> {
-    const initialProps = await Document.getInitialProps(ctx);
-
-    return initialProps;
+    return Document.getInitialProps(ctx);
   }
 
   render() {
     return (
-      <Html className="bg-zinc-900">
+      <Html className='bg-springwood'>
         <Head />
         <body>
           <Main />
           <NextScript />
         </body>
+        <link
+          href="https://fonts.googleapis.com/css?family=Inter"
+          rel="stylesheet"
+          type="text/css"
+        />
       </Html>
     );
   }
 }
-
-export default MyDocument;
