@@ -6,20 +6,39 @@ export interface MenuItem {
   img: string;
 }
 
-export interface MenuProps {
-  items: MenuItem[];
-}
+export interface MenuProps {}
 
-export function Menu(props: MenuProps): JSX.Element {
-  const {items} = props;
+const items: MenuItem[] = [
+  {
+    label: 'Kindelia',
+    img: 'kindelia.svg',
+    href: 'https://kindelia.org',
+  },
+  {
+    label: 'Kind2',
+    img: 'kind2.svg',
+    href: 'https://kind2.kindelia.org',
+  },
+  {
+    label: 'HVM',
+    img: 'hvm.svg',
+    href: 'https://hvm.kindelia.org',
+  },
+  {
+    label: 'Blog',
+    img: 'blog.svg',
+    href: 'https://blog.kindelia.org',
+  },
+];
 
+export function Menu(_props: MenuProps): JSX.Element {
   return (
-    <div className="flex flex-row gap-10">
-      {items.map((menu, index) => (
+    <div className="flex flex-row gap-3">
+      {items.map((menu) => (
         <div
           className="bg-mineshaft border-mineshaft flex h-[300px] w-[221px] cursor-pointer flex-col rounded-lg border pt-5 hover:border-white"
-          key={index}>
-          <h1 className="text-springwood text-center text-3xl font-semibold tracking-wider">
+          key={menu.label}>
+          <h1 className="text-springwood text-center text-3xl font-semibold tracking-wider font-inter">
             {menu.label}
           </h1>
           <div className="mt-auto mb-4 flex flex-col items-center">
