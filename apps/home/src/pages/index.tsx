@@ -1,29 +1,6 @@
 import Head from 'next/head';
 import {SVG, Footer} from 'ui';
-import {Menu, MenuItem} from '../components/Menu';
-
-const items: MenuItem[] = [
-  {
-    label: 'Kindelia',
-    img: 'kindelia.svg',
-    href: 'https://kindelia.org',
-  },
-  {
-    label: 'Kind2',
-    img: 'kind2.svg',
-    href: 'https://kind2.kindelia.org',
-  },
-  {
-    label: 'HVM',
-    img: 'hvm.svg',
-    href: 'https://hvm.kindelia.org',
-  },
-  {
-    label: 'Blog',
-    img: 'blog.svg',
-    href: 'https://blog.kindelia.org',
-  },
-];
+import {Menu} from '../components/Menu';
 
 export default function Home(): JSX.Element {
   return (
@@ -37,7 +14,7 @@ export default function Home(): JSX.Element {
         <div className="mb-36 flex cursor-pointer">
           <SVG type="logo" />
         </div>
-        <Menu items={items} />
+        <Menu />
       </main>
 
       <Footer />
