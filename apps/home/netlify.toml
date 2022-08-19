@@ -1,5 +1,5 @@
 [build]
-  command = "cd ../.. && npm install && npm run build"
+  command = "cd ../.. && yarn install && yarn build"
   publish = ".next"
 
 [[plugins]]
