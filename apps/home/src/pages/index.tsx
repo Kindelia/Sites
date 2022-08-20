@@ -7,7 +7,6 @@ export default function Home(): JSX.Element {
     <div className="flex min-h-screen flex-col items-center justify-center">
       <Head>
         <title>Kindelia Foundation</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="mx-auto flex w-auto flex-col items-center px-4 pt-16 sm:pt-24 lg:px-8">

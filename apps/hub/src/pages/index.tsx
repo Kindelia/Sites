@@ -8,7 +8,6 @@ export default function Home() {
     <div className="flex min-h-screen flex-col items-center justify-center">
       <Head>
         <title>Hub - Kindelia</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <nav className="bg-mineshaft border-springwood flex h-16 w-full flex-row items-center justify-around border-b">
