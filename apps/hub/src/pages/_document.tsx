@@ -22,11 +22,6 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-        <link
-          href="https://fonts.googleapis.com/css?family=Inter"
-          rel="stylesheet"
-          type="text/css"
-        />
       </Html>
     );
   }
