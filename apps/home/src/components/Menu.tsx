@@ -33,7 +33,7 @@ const items: MenuItem[] = [
 
 export function Menu(_props: MenuProps): JSX.Element {
   return (
-    <div className="flex flex-row gap-3">
+    <div className="flex flex-row gap-3 flex-wrap justify-center mb-10">
       {items.map((menu) => (
         <div
           className="bg-mineshaft border-mineshaft flex h-[300px] w-[221px] cursor-pointer flex-col rounded-lg border pt-5 hover:border-white"

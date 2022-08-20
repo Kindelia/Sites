@@ -12,7 +12,7 @@ export default function MyApp({Component, pageProps}: AppProps) {
         size: '2rem',
         color: 'rgba(247, 243, 240, 0.5)',
       }}>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </IconContext.Provider>
   );
 }
