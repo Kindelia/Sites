@@ -1,4 +1,4 @@
-import { FaDiscord, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaDiscord, FaTwitter, FaYoutube, FaGithub } from 'react-icons/fa';
 import { Link } from './Link';
 
 export function Footer(): JSX.Element {
@@ -15,14 +15,17 @@ export function Footer(): JSX.Element {
         <text className="text-springwood text-base font-semibold opacity-50 font-inter leading-8">
           Follow Us
         </text>
-        <Link href="https://twitter.com/kindelia">
+        <Link href="https://twitter.com/KindeliaOrg">
           <FaTwitter />
         </Link>
-        <Link href="https://youtube.com/kindelia">
+        <Link href="https://www.youtube.com/c/Kindelia">
           <FaYoutube />
         </Link>
         <Link href="https://discord.gg/kindelia">
           <FaDiscord />
+        </Link>
+        <Link href="https://github.com/Kindelia">
+          <FaGithub />
         </Link>
       </div>
     </footer>
