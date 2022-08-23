@@ -10,11 +10,11 @@
     "lint": "turbo run lint",
     "clean": "turbo run clean",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "test": "yarn cypress:headless",
+    "test": "yarn e2e:headless",
     "cypress": "cypress open",
     "cypress:headless": "cypress run",
-    "e2e": "start-server-and-test start http://localhost:3000 cypress",
-    "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless"
+    "e2e": "yarn start-server-and-test dev http://localhost:3000 cypress",
+    "e2e:headless": "yarn start-server-and-test dev http://localhost:3000 cypress:headless"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
@@ -22,6 +22,13 @@
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.11",
     "turbo": "latest",
-    "cypress": "latest"
+    "cypress": "latest",
+    "start-server-and-test": "latest",
+    "husky": "latest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint && yarn format && yarn test"
+    }
   }
 }
