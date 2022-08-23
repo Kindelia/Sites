@@ -15,16 +15,16 @@ export function Footer(): JSX.Element {
         <text className="text-springwood text-base font-semibold opacity-50 font-inter leading-8">
           Follow Us
         </text>
-        <Link href="https://twitter.com/KindeliaOrg">
+        <Link href="https://twitter.com/KindeliaOrg" cy="twitter">
           <FaTwitter />
         </Link>
-        <Link href="https://www.youtube.com/c/Kindelia">
+        <Link href="https://www.youtube.com/c/Kindelia" cy="youtube">
           <FaYoutube />
         </Link>
-        <Link href="https://discord.gg/kindelia">
+        <Link href="https://discord.gg/kindelia" cy='discord'>
           <FaDiscord />
         </Link>
-        <Link href="https://github.com/Kindelia">
+        <Link href="https://github.com/Kindelia" cy="github">
           <FaGithub />
         </Link>
       </div>
