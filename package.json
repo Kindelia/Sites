@@ -9,13 +9,19 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "clean": "turbo run clean",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "test": "yarn cypress:headless",
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run",
+    "e2e": "start-server-and-test start http://localhost:3000 cypress",
+    "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.11",
-    "turbo": "latest"
+    "turbo": "latest",
+    "cypress": "latest"
   }
 }
