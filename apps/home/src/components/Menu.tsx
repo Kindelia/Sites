@@ -3,7 +3,7 @@ import {SVG} from 'ui';
 export interface MenuItem {
   label: string;
   href: string;
-  img: string;
+  icon: string;
 }
 
 export interface MenuProps {}
@@ -11,38 +11,39 @@ export interface MenuProps {}
 const items: MenuItem[] = [
   {
     label: 'Kindelia',
-    img: 'kindelia.svg',
+    icon: 'kindelia',
     href: 'https://kindelia.org',
   },
   {
     label: 'Kind2',
-    img: 'kind2.svg',
+    icon: 'kind2',
     href: 'https://kind2.kindelia.org',
   },
   {
     label: 'HVM',
-    img: 'hvm.svg',
+    icon: 'hvm',
     href: 'https://hvm.kindelia.org',
   },
   {
     label: 'Blog',
-    img: 'blog.svg',
+    icon: 'blog',
     href: 'https://blog.kindelia.org',
   },
 ];
 
 export function Menu(_props: MenuProps): JSX.Element {
   return (
-    <div className="flex flex-row gap-3 flex-wrap justify-center mb-10">
+    <div className="mb-10 flex flex-row flex-wrap justify-center gap-3">
       {items.map((menu) => (
         <div
           className="bg-mineshaft border-mineshaft flex h-[300px] w-[221px] cursor-pointer flex-col rounded-lg border pt-5 hover:border-white"
-          key={menu.label}>
-          <h1 className="text-springwood text-center text-3xl font-semibold tracking-wider font-inter">
+          key={menu.label}
+        >
+          <h1 className="text-springwood font-inter text-center text-3xl font-semibold tracking-wider">
             {menu.label}
           </h1>
           <div className="mt-auto mb-4 flex flex-col items-center">
-            <SVG type="kind2" />
+            {/* <SVG type={menu.icon} /> */}
           </div>
         </div>
       ))}
