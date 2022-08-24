@@ -1,17 +1,14 @@
-name: Linter test
-on: [pull_request]
+name: Linter
+
+on: [push]
+
 jobs:
-  build:
-    name: Linter run
+  test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: borales/actions-yarn@v3.0.0
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
         with:
-          cmd: install
-      - uses: borales/actions-yarn@v3.0.0
-        with:
-          cmd: build
-      - uses: borales/actions-yarn@v3.0.0
-        with:
-          cmd: lint
+          node-version: 14
+      - run: yarn
+      - run: yarn lint
