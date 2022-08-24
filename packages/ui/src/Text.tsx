@@ -8,7 +8,8 @@ export function Text(props: TextProps): JSX.Element {
 
   return (
     <text
-      className={`text-springwood text-center text-base font-semibold capitalize ${className}`}>
+      className={`text-springwood text-center text-base font-semibold capitalize ${className}`}
+    >
       {children}
     </text>
   );

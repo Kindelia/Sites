@@ -16,7 +16,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html className='bg-springwood'>
+      <Html className="bg-springwood">
         <Head />
         <body>
           <Main />
