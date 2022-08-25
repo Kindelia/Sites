@@ -54,7 +54,7 @@ export default function Home() {
         <div className="bg-springwood flex h-[600px] w-full flex-col px-36 py-4">
           <h1 className="text-4xl font-bold">Featured</h1>
 
-          <div className='flex flex-row'>
+          <div className="flex flex-row">
             {R.range(0, 5).map((i) => (
               <div className="flex flex-row items-center gap-4">
                 <div className="bg-mineshaft h-32 w-32 rounded-md"></div>

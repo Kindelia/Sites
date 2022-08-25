@@ -12,7 +12,8 @@ export function Link(props: LinkProps): JSX.Element {
     <a
       data-cy={cy}
       href={href}
-      className={`text-springwood text-center text-base font-semibold capitalize ${className}`}>
+      className={`text-springwood text-center text-base font-semibold capitalize ${className}`}
+    >
       {children}
     </a>
   );

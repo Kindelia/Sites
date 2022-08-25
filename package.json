@@ -10,6 +10,7 @@
     "lint": "turbo run lint",
     "clean": "turbo run clean",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,md}\"",
     "test": "yarn e2e:headless",
     "cypress": "cypress open",
     "cypress:headless": "cypress run",
@@ -28,7 +29,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint && yarn format && yarn test"
+      "pre-push": "yarn lint && yarn format && yarn test"
     }
   }
 }
