@@ -1,4 +1,4 @@
-import {sizes} from '../../utils';
+import {sizes} from '../../../utils';
 
 describe('pages/index.tsx', () => {
   sizes.forEach((size) => {
