@@ -4,7 +4,7 @@ type NavBarProps = {};
 
 export function Navbar(_props: NavBarProps): JSX.Element {
   return (
-    <nav className="bg-mineshaft border-neutral-600 flex h-16 w-full flex-row items-center justify-around border-b-2">
+    <nav className="bg-mineshaft flex h-16 w-full flex-row items-center justify-around border-b-2 border-neutral-600">
       <div className="flex flex-row items-center gap-7">
         <div className="h-9 w-10">
           <SVG type="logo" height={32} width={32} />

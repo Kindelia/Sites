@@ -1,6 +1,6 @@
 import * as F from '@fxts/core';
-import { useState } from 'react';
-import { IoIosSearch } from 'ui';
+import {useState} from 'react';
+import {IoIosSearch} from 'ui';
 
 enum Category {
   ALL_FILTERS = 'All Filters',

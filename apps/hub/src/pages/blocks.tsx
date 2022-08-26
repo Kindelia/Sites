@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import { useBlocksQuery } from '../hooks/useBlocksQuery';
+import {useBlocksQuery} from '../hooks/useBlocksQuery';
 
 export default function Home() {
   const blockQuery = useBlocksQuery();

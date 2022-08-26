@@ -1,9 +1,9 @@
 import '../styles/globals.css';
 import 'ui/styles.css';
 
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { theme } from 'tailwind-config/tailwind.config.js';
-import { IconContext } from 'ui';
+import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
+import {theme} from 'tailwind-config/tailwind.config.js';
+import {IconContext} from 'ui';
 
 import type {AppProps} from 'next/app';
 export default function MyApp({Component, pageProps}: AppProps) {
