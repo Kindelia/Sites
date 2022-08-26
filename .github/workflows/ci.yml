@@ -1,4 +1,4 @@
-name: Format
+name: Continuous Integration
 
 on: [push]
 
@@ -11,4 +11,6 @@ jobs:
         with:
           node-version: 14
       - run: yarn
+      - run: yarn lint
       - run: yarn format:check
+      - run: yarn e2e:headless
