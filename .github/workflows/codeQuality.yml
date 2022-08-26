@@ -1,18 +1,20 @@
-name: Continuous Integration
+name: Automated Tests and Linting
 
 on: [push]
 
 jobs:
-  test:
+  lint:
     runs-on: ubuntu-latest
-      steps:
+    steps:
       - uses: actions/checkout@v1
+
       - uses: actions/cache@v2
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
-      - name: Install packages
+      - name: Install dependencies
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn install
 
       - name: Run Typescript Checks
@@ -20,6 +22,3 @@ jobs:
 
       - name: Run Format Checks
         run: yarn format:check
-
-      - name: Run E2E Tests
-        run: yarn test
