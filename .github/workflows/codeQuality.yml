@@ -22,3 +22,6 @@ jobs:
 
       - name: Run Format Checks
         run: yarn format:check
+
+      - name: Run E2E Tests
+        run: yarn test:e2e
