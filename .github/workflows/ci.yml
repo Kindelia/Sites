@@ -5,12 +5,21 @@ on: [push]
 jobs:
   test:
     runs-on: ubuntu-latest
-    steps:
+      steps:
       - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - uses: actions/cache@v2
         with:
-          node-version: 14
-      - run: yarn
-      - run: yarn lint
-      - run: yarn format:check
-      - run: yarn e2e:headless
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install packages
+        run: yarn install
+
+      - name: Run Typescript Checks
+        run: yarn lint
+
+      - name: Run Format Checks
+        run: yarn format:check
+
+      - name: Run E2E Tests
+        run: yarn test
