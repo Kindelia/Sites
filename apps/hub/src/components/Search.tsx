@@ -38,7 +38,10 @@ export function Search() {
     <div className="flex h-[45px] w-[620px] items-center rounded-md shadow-md shadow-black">
       <div className="bg-mineshaft flex w-[300px] items-center justify-center gap-2">
         {
-          <select className="text-springwood font-inter border-none bg-transparent outline-none">
+          <select
+            className="text-springwood font-inter border-none bg-transparent outline-none"
+            defaultValue={selectedCategory}
+          >
             {options}
           </select>
         }
