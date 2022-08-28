@@ -1,16 +1,20 @@
+import classNames from 'classnames';
+
 type TextProps = {
   children: React.ReactNode;
   className?: string;
 };
 
 export function Text(props: TextProps): JSX.Element {
-  const {children, className} = props;
+  const {children} = props;
 
-  return (
-    <text
-      className={`text-springwood text-center text-base font-semibold capitalize ${className}`}
-    >
-      {children}
-    </text>
+  const className = classNames(
+    // TODO: for some reason... I had to do this workaround 
+    // because it seems that the tail is getting lost in which text color to keep
+    props.className ? props.className : 'text-springwood',
+    // text-base
+    'font-inter text-center font-semibold capitalize',
   );
+
+  return <text className={className}>{children}</text>;
 }

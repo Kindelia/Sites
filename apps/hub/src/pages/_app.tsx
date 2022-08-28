@@ -1,19 +1,21 @@
 import '../styles/globals.css';
 import 'ui/styles.css';
 
-import type {AppProps} from 'next/app';
+import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
+import {theme} from 'tailwind-config/tailwind.config.js';
 import {IconContext} from 'ui';
 
+import type {AppProps} from 'next/app';
 export default function MyApp({Component, pageProps}: AppProps) {
   return (
-    // @TODO: Remove in the future and put inside the UI
-    <IconContext.Provider
-      value={{
-        size: '2rem',
-        color: 'rgba(247, 243, 240, 0.5)',
-      }}
-    >
-      <Component {...pageProps} />
-    </IconContext.Provider>
+    <QueryClientProvider client={new QueryClient()}>
+      <IconContext.Provider
+        value={{
+          color: theme.extend.colors.springwood,
+        }}
+      >
+        <Component {...pageProps} />
+      </IconContext.Provider>
+    </QueryClientProvider>
   );
 }

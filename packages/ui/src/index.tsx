@@ -6,3 +6,5 @@ export * from './Link';
 
 export * from 'react-icons/fa';
 export * from 'react-icons/lib';
+export * from 'react-icons/io';
+export * from 'react-icons/fi';
