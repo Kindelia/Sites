@@ -22,8 +22,8 @@ export interface BlockData {
   status: string;
 }
 
-export function useBlocksQuery() {
-  return useQuery<BlockData, unknown, {hash: string}>(['blockData'], ({hash}) =>
+export function useBlockQuery({hash}: {hash: string}) {
+  return useQuery<BlockData, unknown, {hash: string}>(['blockData'], () =>
     fetch(`${KINDELIA_URL}/blocks/${hash}`).then((res) => res.json()),
   );
 }
