@@ -22,12 +22,13 @@ const items: MenuItem[] = [
   {
     label: 'HVM',
     icon: 'hvm',
-    href: 'https://hvm.kindelia.org',
+    // href: 'https://hvm.kindelia.org',
+    href: 'https://github.com/Kindelia/hvm',
   },
   {
     label: 'Blog',
     icon: 'blog',
-    href: 'https://blog.kindelia.org',
+    href: 'https://kindelia.org/blog',
   },
 ];
 
@@ -35,7 +36,8 @@ export function Menu(_props: MenuProps): JSX.Element {
   return (
     <div className="mb-10 flex flex-row flex-wrap justify-center gap-3">
       {items.map((menu) => (
-        <div
+        <a
+          href={menu.href}
           className="bg-mineshaft border-mineshaft flex h-[300px] w-[221px] cursor-pointer flex-col rounded-lg border pt-5 hover:border-white"
           key={menu.label}
         >
@@ -45,7 +47,7 @@ export function Menu(_props: MenuProps): JSX.Element {
           <div className="mt-auto mb-4 flex flex-col items-center">
             {/* <SVG type={menu.icon} /> */}
           </div>
-        </div>
+        </a>
       ))}
     </div>
   );
