@@ -1,4 +1,5 @@
-import {Button, Link, SVG} from 'ui';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { Link, SVG } from 'ui';
 
 type NavBarProps = {};
 
@@ -20,8 +21,8 @@ export function Navbar(_props: NavBarProps): JSX.Element {
         </Link>
       </div>
       <div className="flex flex-row items-center gap-4">
-        <Button>Login</Button>
-        <img className="bg-springwood h-8 w-8 rounded-full" />
+        <ConnectButton />
+        {/* <img className="bg-springwood h-8 w-8 rounded-full" /> */}
       </div>
     </nav>
   );
