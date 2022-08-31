@@ -1,9 +1,9 @@
-import {SVG} from 'ui';
+import {BlogIcon, HVMIcon, Kind2Icon, KindeliaIcon} from 'ui';
 
 export interface MenuItem {
   label: string;
   href: string;
-  icon: string;
+  icon: JSX.Element;
 }
 
 export interface MenuProps {}
@@ -11,23 +11,23 @@ export interface MenuProps {}
 const items: MenuItem[] = [
   {
     label: 'Kindelia',
-    icon: 'kindelia',
+    icon: <KindeliaIcon className="h-32 w-32" />,
     href: 'https://kindelia.org',
   },
   {
     label: 'Kind2',
-    icon: 'kind2',
+    icon: <Kind2Icon className="h-32 w-32" />,
     href: 'https://kind2.kindelia.org',
   },
   {
     label: 'HVM',
-    icon: 'hvm',
+    icon: <HVMIcon className="h-32 w-32" />,
     // href: 'https://hvm.kindelia.org',
     href: 'https://github.com/Kindelia/hvm',
   },
   {
     label: 'Blog',
-    icon: 'blog',
+    icon: <BlogIcon className="h-32 w-32" />,
     href: 'https://kindelia.org/blog',
   },
 ];
@@ -45,7 +45,7 @@ export function Menu(_props: MenuProps): JSX.Element {
             {menu.label}
           </h1>
           <div className="mt-auto mb-4 flex flex-col items-center">
-            {/* <SVG type={menu.icon} /> */}
+            {menu.icon}
           </div>
         </a>
       ))}
