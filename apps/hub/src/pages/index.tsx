@@ -1,6 +1,6 @@
 import * as F from '@fxts/core';
 import Head from 'next/head';
-import {Footer, SVG, Text, FiHeart} from 'ui';
+import {Footer, LogoIcon} from 'ui';
 import {FeaturedCard} from '../components/FeaturedCard';
 
 import {Navbar} from '../components/Navbar';
@@ -30,7 +30,7 @@ export default function Home() {
       <main className="flex w-full flex-col">
         <div className="bg-mineshaft flex h-[538px] flex-col items-center ">
           <div className="mt-20 mb-20">
-            <SVG type="logo" height={199} width={216} />
+            <LogoIcon className="h-48 w-52" />
           </div>
           <Search />
         </div>
