@@ -2,20 +2,20 @@ import '../styles/globals.css';
 import 'ui/styles.css';
 import '@rainbow-me/rainbowkit/styles.css';
 
-import { darkTheme, getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { theme } from 'tailwind-config/tailwind.config.js';
-import { IconContext } from 'ui';
-import { chain, configureChains, createClient, WagmiConfig } from 'wagmi';
-import { publicProvider } from 'wagmi/providers/public';
+import {
+  darkTheme,
+  getDefaultWallets,
+  RainbowKitProvider,
+} from '@rainbow-me/rainbowkit';
+import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
+import {chain, configureChains, createClient, WagmiConfig} from 'wagmi';
+import {publicProvider} from 'wagmi/providers/public';
 
 import type {AppProps} from 'next/app';
 
 const {chains, provider} = configureChains(
   [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
-  [
-    publicProvider(),
-  ],
+  [publicProvider()],
 );
 
 const rainbowkitTheme = darkTheme({
@@ -24,7 +24,7 @@ const rainbowkitTheme = darkTheme({
   borderRadius: 'small',
   fontStack: 'system',
   overlayBlur: 'small',
-})
+});
 
 const {connectors} = getDefaultWallets({
   appName: 'Kindelia Hub App',
@@ -42,13 +42,7 @@ export default function MyApp({Component, pageProps}: AppProps) {
     <QueryClientProvider client={new QueryClient()}>
       <WagmiConfig client={wagmiClient}>
         <RainbowKitProvider chains={chains} theme={rainbowkitTheme}>
-          <IconContext.Provider
-            value={{
-              color: theme.extend.colors.springwood,
-            }}
-          >
-            <Component {...pageProps} />
-          </IconContext.Provider>
+          <Component {...pageProps} />
         </RainbowKitProvider>
       </WagmiConfig>
     </QueryClientProvider>
