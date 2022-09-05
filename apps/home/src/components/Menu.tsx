@@ -34,7 +34,7 @@ const items: MenuItem[] = [
 
 export function Menu(_props: MenuProps): JSX.Element {
   return (
-    <div className="mb-10 flex flex-row flex-wrap justify-center gap-3">
+    <div className="mb-10 mt-auto flex flex-row flex-wrap justify-center gap-3">
       {items.map((menu) => (
         <a
           href={menu.href}
