@@ -16,10 +16,9 @@ export function PublicLayout(props: PublicLayoutProps): JSX.Element {
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
-      <main className={'flex w-full bg-pink-500 flex-row items-center justify-center'}>
+      <div className={'flex w-full flex-col justify-center'}>
         {children}
-        <MenuDocs />
-      </main>
+      </div>
       <Footer />
     </div>
   );
