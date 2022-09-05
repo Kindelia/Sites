@@ -51,7 +51,7 @@ export function MenuDocs(): JSX.Element {
   const [menuIndex, setMenuIndex] = useState(0);
 
   return (
-    <div className="bg-mineshaft ml-auto flex min-h-screen flex-col items-center justify-center gap-4 px-16">
+    <div className="bg-mineshaft ml-auto flex min-h-screen flex-col justify-center gap-4 px-16">
       {menus.map((menu, index) => {
         const isIndex = index === menuIndex;
 
