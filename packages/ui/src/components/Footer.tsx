@@ -8,7 +8,7 @@ export function Footer(): JSX.Element {
   const fullYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-mineshaft mt-auto flex h-24 w-full items-center justify-around">
+    <footer className="bg-mineshaft mt-auto flex flex-col sm:flex-row h-24 w-full items-center justify-around">
       <div>
         <text className="text-springwood font-inter text-base font-semibold leading-8 opacity-50">
           © {fullYear} Kindelia Foundation
