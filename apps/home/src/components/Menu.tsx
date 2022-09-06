@@ -10,7 +10,7 @@ export interface MenuProps {}
 
 const items: MenuItem[] = [
   {
-    label: 'Kindelia',
+    label: 'Chain',
     icon: <KindeliaIcon className="h-32 w-32" />,
     // href: 'https://kindelia.org',
     href: 'https://github.com/Kindelia/Kindelia',
@@ -37,7 +37,7 @@ const items: MenuItem[] = [
 
 export function Menu(_props: MenuProps): JSX.Element {
   return (
-    <div className="mb-10 mt-auto flex flex-row flex-wrap justify-center gap-3">
+    <div className="mb-10 mt-10 lg:mt-auto flex flex-row flex-wrap justify-center gap-3">
       {items.map((menu) => (
         <a
           href={menu.href}
