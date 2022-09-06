@@ -17,7 +17,10 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html className="bg-[url('/shapelined.png')]">
-        <Head />
+        <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link rel="icon" href="/favicon.svg" />
+        </Head>
         <body>
           <Main />
           <NextScript />
