@@ -9,13 +9,13 @@ export default function Home(): JSX.Element {
         <title>Kindelia Foundation</title>
       </Head>
 
-      <main className="mx-auto flex w-auto flex-col items-center px-4 pt-12 lg:px-8">
-        <div className="mb-36 flex cursor-pointer">
-          <LogoIcon className='w-[355px] h-[327px] active:animate-bounce' />
+      <main className="flex w-full flex-1 flex-col items-center border-2 border-white px-4 pt-12 lg:px-8">
+        <div className="flex cursor-pointer">
+          <LogoIcon className="h-[327px] w-[355px] active:animate-bounce" />
         </div>
         <Menu />
       </main>
-      
+
       <Footer />
     </div>
   );
