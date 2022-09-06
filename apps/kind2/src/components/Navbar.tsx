@@ -23,7 +23,7 @@ export function Navbar(_props: NavBarProps): JSX.Element {
         </Link>
       </div>
       <div className="flex flex-row items-center gap-4">
-        <img className="bg-springwood h-8 w-8 rounded-full" />
+        {/* <img className="bg-springwood h-8 w-8 rounded-full" /> */}
       </div>
     </nav>
   );
