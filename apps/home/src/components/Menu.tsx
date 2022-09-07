@@ -1,4 +1,4 @@
-import {BlogIcon, HVMIcon, Kind2Icon, KindeliaIcon} from 'ui';
+import {BlogIcon, HVMIcon, KindIcon, ChainIcon} from 'ui';
 
 export interface MenuItem {
   label: string;
@@ -11,13 +11,13 @@ export interface MenuProps {}
 const items: MenuItem[] = [
   {
     label: 'Chain',
-    icon: <KindeliaIcon className="h-32 w-32" />,
+    icon: <ChainIcon className="h-32 w-32" />,
     // href: 'https://kindelia.org',
     href: 'https://github.com/Kindelia/Kindelia',
   },
   {
-    label: 'Kind2',
-    icon: <Kind2Icon className="h-32 w-32" />,
+    label: 'Kind',
+    icon: <KindIcon className="h-32 w-32" />,
     // href: 'https://kind2.kindelia.org',
     href: 'https://github.com/Kindelia/Kind2'
   },
