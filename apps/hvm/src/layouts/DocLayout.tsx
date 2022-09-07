@@ -19,13 +19,10 @@ export function DocLayout(props: DocLayoutProps): JSX.Element {
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
-      <main
-        className={clsx(
-          'flex w-full flex-row',
-          className,
-        )}
-      >
-        <div className="border-mineshaft border-2 flex flex-1 min-h-screen p-32 flex-col">{children}</div>
+      <main className={clsx('flex w-full flex-row', className)}>
+        <div className="border-mineshaft flex min-h-screen flex-1 flex-col border-2 p-32">
+          {children}
+        </div>
         {isDoc && <MenuDocs />}
       </main>
       <Footer />

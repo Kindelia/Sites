@@ -1,7 +1,7 @@
-import { Button, Text, Video } from 'ui';
+import {Button, Text, Video} from 'ui';
 
-import { ListFold } from '../components/ListFold';
-import { ParallelQuicksort } from '../components/ParallelQuicksort';
+import {ListFold} from '../components/ListFold';
+import {ParallelQuicksort} from '../components/ParallelQuicksort';
 
 export default function Home() {
   return (
@@ -36,9 +36,9 @@ export default function Home() {
         <Text className="text-mineshaft border-b border-[#87878A] pb-3 text-2xl font-bold">
           Runtime
         </Text>
-        <div className='flex flex-row flex-wrap gap-4'>
-        <ListFold />
-        <ParallelQuicksort />
+        <div className="flex flex-row flex-wrap gap-4">
+          <ListFold />
+          <ParallelQuicksort />
         </div>
       </main>
     </>

@@ -8,7 +8,7 @@ export function Footer(): JSX.Element {
   const fullYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-mineshaft mt-auto flex flex-col sm:flex-row h-24 w-full items-center justify-around">
+    <footer className="bg-mineshaft mt-auto flex h-24 w-full flex-col items-center justify-around sm:flex-row">
       <div>
         <text className="text-springwood font-inter text-base font-semibold leading-8 opacity-50">
           © {fullYear} Kindelia Foundation
@@ -19,16 +19,16 @@ export function Footer(): JSX.Element {
           Follow Us
         </text>
         <Link href="https://github.com/Kindelia" cy="github">
-          <GithubIcon  className='h-8 w-8 hover:text-springwood'/>
+          <GithubIcon className="hover:text-springwood h-8 w-8" />
         </Link>
         <Link href="https://twitter.com/KindeliaOrg" cy="twitter">
-          <TwitterIcon className='h-8 w-8 hover:text-springwood' />
+          <TwitterIcon className="hover:text-springwood h-8 w-8" />
         </Link>
         <Link href="https://www.youtube.com/c/Kindelia" cy="youtube">
-          <YoutubeIcon className='h-8 w-8 hover:text-springwood' />
+          <YoutubeIcon className="hover:text-springwood h-8 w-8" />
         </Link>
         <Link href="https://discord.gg/kindelia" cy="discord">
-          <DiscordIcon className='h-8 w-8 hover:text-springwood' />
+          <DiscordIcon className="hover:text-springwood h-8 w-8" />
         </Link>
       </div>
     </footer>

@@ -11,7 +11,7 @@ export default function Home(): JSX.Element {
 
       <main className="flex w-full flex-1 flex-col items-center px-4 pt-12 lg:px-8">
         <div className="flex cursor-pointer">
-          <LogoIcon className="sm:h-[327px] sm:w-[355px] h[193px] w-[207px] active:animate-bounce" />
+          <LogoIcon className="h[193px] w-[207px] active:animate-bounce sm:h-[327px] sm:w-[355px]" />
         </div>
         <Menu />
       </main>

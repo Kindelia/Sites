@@ -46,6 +46,6 @@ main = do
   print $ fold list (+) 0
 `;
 
-export function ParallelQuicksort() {
-  return <CompareCodeBlock haskell={haskell} kind2={kind2} title="Parallel Quicksort" />;
+export function ListFold() {
+  return <CompareCodeBlock haskell={haskell} kind2={kind2} title="List Fold" />;
 }

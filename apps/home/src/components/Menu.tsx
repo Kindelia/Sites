@@ -19,7 +19,7 @@ const items: MenuItem[] = [
     label: 'Kind',
     icon: <KindIcon className="h-32 w-32" />,
     // href: 'https://kind2.kindelia.org',
-    href: 'https://github.com/Kindelia/Kind2'
+    href: 'https://github.com/Kindelia/Kind2',
   },
   {
     label: 'HVM',
@@ -31,13 +31,13 @@ const items: MenuItem[] = [
     label: 'Manifesto',
     icon: <BlogIcon className="h-32 w-32" />,
     // href: 'https://kindelia.org/blog',
-    href: 'https://github.com/Kindelia/manifesto'
+    href: 'https://github.com/Kindelia/manifesto',
   },
 ];
 
 export function Menu(_props: MenuProps): JSX.Element {
   return (
-    <div className="mb-10 mt-10 lg:mt-auto flex flex-row flex-wrap justify-center gap-3">
+    <div className="mb-10 mt-10 flex flex-row flex-wrap justify-center gap-3 lg:mt-auto">
       {items.map((menu) => (
         <a
           href={menu.href}
