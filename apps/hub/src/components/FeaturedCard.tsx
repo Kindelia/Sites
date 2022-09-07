@@ -17,7 +17,7 @@ export function FeaturedCard(props: FeaturedCardProps): JSX.Element {
         </div>
       </div>
       <Text className="text-xs text-gray-300">2D Pixel Art Game</Text>
-      <div className="bg-mineshaft h-64 w-64 rounded-lg mt-4"></div>
+      <div className="bg-mineshaft mt-4 h-64 w-64 rounded-lg"></div>
     </div>
   );
 }

@@ -47,5 +47,11 @@ main = do
 `;
 
 export function ParallelQuicksort() {
-  return <CompareCodeBlock haskell={haskell} kind2={kind2} title="Parallel Quicksort" />;
+  return (
+    <CompareCodeBlock
+      haskell={haskell}
+      kind2={kind2}
+      title="Parallel Quicksort"
+    />
+  );
 }

@@ -32,7 +32,7 @@ export function CompareCodeBlock(props: CompareCodeBlockProps) {
           </div>
         </div>
 
-        <div className='flex flex-row'>
+        <div className="flex flex-row">
           <CopyBlock
             language={'text'}
             text={kind2}

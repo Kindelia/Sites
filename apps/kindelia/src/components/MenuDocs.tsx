@@ -61,9 +61,7 @@ export function MenuDocs(): JSX.Element {
               className="flex cursor-pointer flex-row items-center gap-4"
               onClick={() => setMenuIndex(index)}
             >
-              <Text
-                className='text-springwood text-2xl font-bold'
-              >
+              <Text className="text-springwood text-2xl font-bold">
                 {menu.title}
               </Text>
               <ArrowIcon

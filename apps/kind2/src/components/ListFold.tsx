@@ -47,11 +47,5 @@ main = do
 `;
 
 export function ListFold() {
-  return (
-    <CompareCodeBlock
-      haskell={haskell}
-      kind2={kind2}
-      title="List Fold"
-    />
-  );
+  return <CompareCodeBlock haskell={haskell} kind2={kind2} title="List Fold" />;
 }

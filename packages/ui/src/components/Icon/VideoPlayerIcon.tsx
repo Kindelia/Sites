@@ -1,4 +1,4 @@
-export type VideoPlayerProps = React.ComponentProps<"svg">;
+export type VideoPlayerProps = React.ComponentProps<'svg'>;
 
 export function VideoPlayerIcon(props: VideoPlayerProps) {
   return (

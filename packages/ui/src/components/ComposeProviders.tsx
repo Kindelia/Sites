@@ -1,7 +1,7 @@
 export type ComposeProvidersProps = {
   with: Array<React.ElementType>;
   children: React.ReactNode;
-}
+};
 
 export function ComposeProviders({
   with: Providers,

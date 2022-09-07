@@ -1,5 +1,5 @@
 import Router from 'next/router';
-import { KindIcon, Link } from 'ui';
+import {KindIcon, Link} from 'ui';
 
 type NavBarProps = {};
 
