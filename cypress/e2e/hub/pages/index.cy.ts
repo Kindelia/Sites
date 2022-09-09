@@ -1,10 +1,13 @@
 import {sizes} from '../../../utils';
 
 describe('pages/index.tsx', () => {
+  before(() => {
+    cy.visit('http://localhost:3001/');
+  })
+
   sizes.forEach((size) => {
     it(`should navigate to the main page on ${size} screen`, () => {
       cy.viewport(size);
-      cy.visit('http://localhost:3001/');
       cy.url().should('include', '/');
     });
   });
