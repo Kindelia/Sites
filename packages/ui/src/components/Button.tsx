@@ -1,13 +1,11 @@
 import clsx from 'clsx';
 
-type ButtonProps = {
-  children: React.ReactNode;
-  className?: string;
+type ButtonProps = React.ComponentPropsWithRef<'button'> & {
   variant?: 'primary' | 'secondary';
-};
+}
 
 export function Button(props: ButtonProps): JSX.Element {
-  const {children, variant} = props;
+  const {children, variant, ...restProps} = props;
 
   const style =
     variant === 'secondary'
@@ -21,6 +19,7 @@ export function Button(props: ButtonProps): JSX.Element {
         style,
         props.className,
       )}
+      {...restProps}
     >
       {children}
     </button>
