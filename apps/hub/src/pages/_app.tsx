@@ -41,7 +41,14 @@ export default function MyApp({Component, pageProps}: AppProps) {
   return (
     <QueryClientProvider client={new QueryClient()}>
       <WagmiConfig client={wagmiClient}>
-        <RainbowKitProvider chains={chains} theme={rainbowkitTheme}>
+        <RainbowKitProvider
+          chains={chains}
+          theme={rainbowkitTheme}
+          appInfo={{
+            appName: 'Kindelia Hub',
+            learnMoreUrl: 'https://hub.kindelia.org',
+          }}
+        >
           <Component {...pageProps} />
         </RainbowKitProvider>
       </WagmiConfig>
