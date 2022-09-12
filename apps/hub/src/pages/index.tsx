@@ -1,9 +1,8 @@
 import * as F from '@fxts/core';
-import Head from 'next/head';
-import {Footer, LogoIcon} from 'ui';
+import {LogoIcon} from 'ui';
 import {FeaturedCard} from '../components/FeaturedCard';
+import {PublicLayout} from '../layouts/PublicLayout';
 
-import {Navbar} from '../components/Navbar';
 import {Search} from '../components/Search';
 
 export default function Home() {
@@ -20,13 +19,7 @@ export default function Home() {
   );
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center">
-      <Head>
-        <title>Hub - Kindelia</title>
-      </Head>
-
-      <Navbar />
-
+    <PublicLayout title="Hub | Kindelia">
       <main className="flex w-full flex-col">
         <div className="bg-mineshaft flex h-[538px] flex-col items-center ">
           <div className="mt-20 mb-20">
@@ -43,7 +36,6 @@ export default function Home() {
           <div className="flex flex-row flex-wrap gap-8">{discoverList}</div>
         </div>
       </main>
-      <Footer />
-    </div>
+    </PublicLayout>
   );
 }
