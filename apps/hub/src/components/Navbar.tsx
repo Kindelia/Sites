@@ -15,7 +15,7 @@ export function Navbar(_props: NavBarProps): JSX.Element {
         <Link href="" className="border-springwood border-b-2 text-base">
           Interact
         </Link>
-        <Link href="" className="text-base">
+        <Link href="/blocks" className="text-base">
           Blocks
         </Link>
         <Link href="" className="text-base">
