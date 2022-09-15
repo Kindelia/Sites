@@ -14,9 +14,9 @@ export function CompareCodeBlock(props: CompareCodeBlockProps) {
   const [showHaskell, setShowHaskell] = useState(false);
 
   return (
-    <div className="flex min-h-[450px] flex-col items-center">
+    <div className="flex min-h-[350px] flex-col items-center">
       <Text className="mb-11">{title}</Text>
-      <div className="min-h-[450px]">
+      <div className="min-h-[350px]">
         <div className="flex flex-row items-center justify-around">
           <div
             className="bg-mineshaft flex h-[41px] w-full items-center justify-center rounded-t-xl"
@@ -29,17 +29,18 @@ export function CompareCodeBlock(props: CompareCodeBlockProps) {
             onClick={() => setShowHaskell(true)}
           >
             <Text className="text-mineshaft text-base">(cod.outra)</Text>
-            <ArrowIcon className="h-8 w-8" />
+            <ArrowIcon className="h-12 w-12 text-minHeight" />
           </div>
         </div>
-
-        <div className='2xl:hidden'>
-        <div className="flex flex-col">
+        <div className="flex flex-col border rounded-b-3xl border-mineshaft">
           <CopyBlock
             customStyle={{
               borderRadius: '0px',
-              width: '400px',
+              width: '350px',
               fontSize: '12px',
+              minHeight: '250px',
+              maxHeight: '250px',
+              overflow: 'scroll',
             }}
             language={showHaskell ? 'haskell' : 'text'}
             text={showHaskell ? haskell : kind2}
@@ -49,9 +50,8 @@ export function CompareCodeBlock(props: CompareCodeBlockProps) {
           />
           <img
             src="https://github.com/Kindelia/Functional-Benchmarks/blob/master/image/runtime_list_fold_.png?raw=true"
-            className="w-[400px]"
+            className="w-[350px] border-b-2 rounded-b-3xl"
           />
-        </div>
         </div>
       </div>
     </div>
