@@ -1,7 +1,11 @@
 import {Button, Text, Video} from 'ui';
 
-import {ListFold} from '../components/ListFold';
-import {ParallelQuicksort} from '../components/ParallelQuicksort';
+import {ListFold} from '../components/Runtime/ListFold';
+import { OptimalLambdaArithmetic } from '../components/Runtime/OptimalLambdaArithmetic';
+import {ParallelQuicksort} from '../components/Runtime/ParallelQuicksort';
+import { Asymptotics } from '../components/TypeCheck/Asymptotics';
+import { ConvEval } from '../components/TypeCheck/ConvEval';
+import { Stic } from '../components/TypeCheck/Stic';
 
 export default function Home() {
   return (
@@ -39,6 +43,15 @@ export default function Home() {
         <div className="flex flex-row flex-wrap gap-4">
           <ListFold />
           <ParallelQuicksort />
+          <OptimalLambdaArithmetic />
+        </div>
+        <Text className="text-mineshaft border-b border-[#87878A] pb-3 text-2xl font-bold">
+          Type-Check
+        </Text>
+        <div className="flex flex-row flex-wrap gap-4">
+          <Asymptotics />
+          <Stic />
+          <ConvEval />
         </div>
       </main>
     </>

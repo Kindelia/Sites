@@ -1,4 +1,4 @@
-import {CompareCodeBlock} from './CompareCodeBlock';
+import {CompareCodeBlock} from '../CompareCodeBlock';
 
 const kind2 = `
 List (t: Type) : Type
@@ -46,12 +46,6 @@ main = do
   print $ fold list (+) 0
 `;
 
-export function ParallelQuicksort() {
-  return (
-    <CompareCodeBlock
-      haskell={haskell}
-      kind2={kind2}
-      title="Parallel Quicksort"
-    />
-  );
+export function Asymptotics() {
+  return <CompareCodeBlock haskell={haskell} kind2={kind2} title="List Fold" />;
 }

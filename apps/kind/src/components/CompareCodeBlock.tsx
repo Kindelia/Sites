@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import {CopyBlock, solarizedLight} from 'react-code-blocks';
-import {ArrowIcon, Modal, Text} from 'ui';
+import {ArrowIcon, Text} from 'ui';
 
 export type CompareCodeBlockProps = {
   kind2: string;
@@ -33,6 +33,7 @@ export function CompareCodeBlock(props: CompareCodeBlockProps) {
           </div>
         </div>
 
+        <div className='2xl:hidden'>
         <div className="flex flex-col">
           <CopyBlock
             customStyle={{
@@ -51,7 +52,7 @@ export function CompareCodeBlock(props: CompareCodeBlockProps) {
             className="w-[400px]"
           />
         </div>
-        <Modal />
+        </div>
       </div>
     </div>
   );
