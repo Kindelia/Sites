@@ -10,19 +10,17 @@ import { Stic } from '../components/TypeCheck/Stic';
 export default function Home() {
   return (
     <>
-      <main className="bg-springwood flex h-[85vh] flex-row items-center justify-around">
-        <div className="flex h-80 w-96 flex-col gap-6">
-          <Text className="text-mineshaft text-4xl font-bold">
+      <main className="bg-springwood flex h-[93vh] flex-row items-center justify-around">
+        <div className="flex h-80 w-[529px] flex-col gap-6">
+          <Text className="text-mineshaft text-4xl font-bold font-sans">
             A Kindness Proof
           </Text>
-          <Text className="text-mineshaft">
-            Kind2 is a pure functional, lazy, non-garbage-collected,
-            general-purpose, dependently typed programming language focusing on
-            performance and usability.
+          <Text className="text-taupegray text-xl leading-10">
+            Kind2 is a pure functional, lazy, non-garbage-collected, general-purpose, dependently typed programming language focusing on performance and usability.
           </Text>
           <div className="flex gap-4">
             <Button>Documentation</Button>
-            <Button variant="secondary" className="px-8">
+            <Button variant="secondary" className="px-8 capitalize">
               Join us
             </Button>
           </div>
@@ -30,8 +28,8 @@ export default function Home() {
         <Video embed="QJJYpsA5tv8" />
       </main>
       <main className="flex flex-col gap-8 bg-[#DDDCDA] px-44 py-44">
-        <Text className="text-mineshaft text-4xl font-bold">Benchmarks</Text>
-        <Text className="text-base font-semibold text-[#87878A]">
+        <Text className="text-mineshaft text-4xl font-bold font-sans">Benchmarks</Text>
+        <Text className="text-base font-semibold text-taupegray">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est
@@ -40,7 +38,7 @@ export default function Home() {
         <Text className="text-mineshaft border-b border-[#87878A] pb-3 text-2xl font-bold">
           Runtime
         </Text>
-        <div className="flex flex-row flex-wrap gap-4">
+        <div className="flex flex-row justify-center flex-wrap gap-4">
           <ListFold />
           <ParallelQuicksort />
           <OptimalLambdaArithmetic />
@@ -48,7 +46,7 @@ export default function Home() {
         <Text className="text-mineshaft border-b border-[#87878A] pb-3 text-2xl font-bold">
           Type-Check
         </Text>
-        <div className="flex flex-row flex-wrap gap-4">
+        <div className="flex flex-row justify-center flex-wrap gap-4">
           <Asymptotics />
           <Stic />
           <ConvEval />
