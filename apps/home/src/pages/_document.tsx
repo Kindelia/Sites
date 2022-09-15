@@ -6,7 +6,7 @@ import Document, {
   Main,
   NextScript,
 } from 'next/document';
-import {version} from '../../package.json';
+import pkg from '../../package.json';
 
 export default class MyDocument extends Document {
   static async getInitialProps(
@@ -23,7 +23,7 @@ export default class MyDocument extends Document {
         </Head>
         <body>
           <Main />
-          <div className="hidden">{version}</div>
+          <div className="hidden">{pkg.version}</div>
           <NextScript />
         </body>
       </Html>
