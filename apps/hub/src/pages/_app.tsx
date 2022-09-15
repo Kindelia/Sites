@@ -12,7 +12,6 @@ import {chain, configureChains, createClient, WagmiConfig} from 'wagmi';
 import {publicProvider} from 'wagmi/providers/public';
 
 import type {AppProps} from 'next/app';
-import {CommandMenu} from 'ui';
 
 const {chains, provider} = configureChains(
   [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
@@ -40,22 +39,19 @@ const wagmiClient = createClient({
 
 export default function MyApp({Component, pageProps}: AppProps) {
   return (
-    <>
-      <QueryClientProvider client={new QueryClient()}>
-        <WagmiConfig client={wagmiClient}>
-          <RainbowKitProvider
-            chains={chains}
-            theme={rainbowkitTheme}
-            appInfo={{
-              appName: 'Kindelia Hub',
-              learnMoreUrl: 'https://hub.kindelia.org',
-            }}
-          >
-            <Component {...pageProps} />
-          </RainbowKitProvider>
-        </WagmiConfig>
-      </QueryClientProvider>
-      <CommandMenu key={"tesdtdasdas"} />
-    </>
+    <QueryClientProvider client={new QueryClient()}>
+      <WagmiConfig client={wagmiClient}>
+        <RainbowKitProvider
+          chains={chains}
+          theme={rainbowkitTheme}
+          appInfo={{
+            appName: 'Kindelia Hub',
+            learnMoreUrl: 'https://hub.kindelia.org',
+          }}
+        >
+          <Component {...pageProps} />
+        </RainbowKitProvider>
+      </WagmiConfig>
+    </QueryClientProvider>
   );
 }
