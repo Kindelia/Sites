@@ -1,11 +1,10 @@
+import {useId} from 'react';
 import {Text} from 'ui';
 
-export type FeaturedCardProps = {
-  key?: string | number;
-};
+export type FeaturedCardProps = {};
 
-export function FeaturedCard(props: FeaturedCardProps): JSX.Element {
-  const {key} = props;
+export function FeaturedCard(_props: FeaturedCardProps): JSX.Element {
+  const key = useId();
 
   return (
     <div key={key} className="h-[441px] w-[326px] rounded-md bg-white p-8">
