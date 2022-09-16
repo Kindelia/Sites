@@ -1,5 +1,6 @@
 import * as F from '@fxts/core';
 import {useState} from 'react';
+import {MagnifyingGlassIcon} from 'ui';
 
 enum Category {
   ALL_FILTERS = 'All Filters',
@@ -50,7 +51,7 @@ export function Search() {
         placeholder="Search Transactions, Blocks, Programs..."
       />
       <div className="bg-mineshaft flex w-24 items-center justify-center">
-        {/* <IoIosSearch fontSize={25} /> */}
+        <MagnifyingGlassIcon className="h-6 w-6 text-springwood" />
       </div>
     </div>
   );

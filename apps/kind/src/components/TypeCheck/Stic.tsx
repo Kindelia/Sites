@@ -1,4 +1,4 @@
-import {CompareCodeBlock} from './CompareCodeBlock';
+import {CompareCodeBlock} from '../CompareCodeBlock';
 
 const kind2 = `
 List (t: Type) : Type
@@ -46,6 +46,6 @@ main = do
   print $ fold list (+) 0
 `;
 
-export function ListFold() {
+export function Stic() {
   return <CompareCodeBlock haskell={haskell} kind2={kind2} title="List Fold" />;
 }

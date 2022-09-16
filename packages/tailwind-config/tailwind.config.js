@@ -17,6 +17,10 @@ module.exports = {
         brandred: colors.red[500],
         mineshaft: '#393939',
         springwood: '#F7F3F0',
+        taupegray: '#87878A',
+        gainsboro: '#DCDCDC',
+        gainsboro2: '#DDDCDA',
+        gainsboro3: '#DDDDDD'
       },
     },
   },

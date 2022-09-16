@@ -11,14 +11,18 @@ export function Navbar(_props: NavBarProps): JSX.Element {
   return (
     <nav className="bg-mineshaft flex h-16 w-full flex-row items-center justify-around">
       <div className="flex flex-row items-center gap-7">
-        <KindIcon className="h-8 w-8 cursor-pointer" onClick={goToHome} />
+        <KindIcon
+          className="text-springwood h-8 w-8 cursor-pointer"
+          fill="#F7F3F0"
+          onClick={goToHome}
+        />
         <Link
           href="/docs/en/getting-started"
-          className="border-springwood border-b-2 text-base"
+          className="border-taupegray border-b-2 text-base text-taupegray"
         >
           Documentation
         </Link>
-        <Link href="" className="text-base">
+        <Link href="https://blog.kindelia.org" className="text-base text-taupegray">
           Blog
         </Link>
       </div>

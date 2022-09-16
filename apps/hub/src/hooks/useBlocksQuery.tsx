@@ -1,7 +1,7 @@
 import {useQuery} from '@tanstack/react-query';
 import {Daum} from './useBlockQuery';
 
-const KINDELIA_URL = 'http://143.110.233.192:8000';
+const PEERS = ['143.244.188.237', '167.99.210.123', '188.166.189.185'];
 
 export interface BlocksData {
   data: Daum[];
@@ -10,6 +10,6 @@ export interface BlocksData {
 
 export function useBlocksQuery() {
   return useQuery<BlocksData>(['blockData'], () =>
-    fetch(`${KINDELIA_URL}/blocks/`).then((res) => res.json()),
+    fetch(`http://${PEERS[0]}:8000/blocks/`).then((res) => res.json()),
   );
 }

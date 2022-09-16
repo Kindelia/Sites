@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import {twMerge} from 'tailwind-merge';
 
 type TextProps = {
   children: React.ReactNode;
@@ -6,15 +6,14 @@ type TextProps = {
 };
 
 export function Text(props: TextProps): JSX.Element {
-  const {children} = props;
+  const {children, className, ...restProps} = props;
 
-  const className = clsx(
-    // TODO: for some reason... I had to do this workaround
-    // because it seems that the tail is getting lost in which text color to keep
-    props.className ? props.className : 'text-springwood',
-    // text-base
-    'font-inter font-semibold capitalize',
+  return (
+    <text
+      className={twMerge('font-inter text-springwood font-semibold', className)}
+      {...restProps}
+    >
+      {children}
+    </text>
   );
-
-  return <text className={className}>{children}</text>;
 }

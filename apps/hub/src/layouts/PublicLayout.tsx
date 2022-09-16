@@ -1,7 +1,5 @@
+import Head from 'next/head';
 import {Footer} from 'ui';
-import {MenuDocs} from '../components/MenuDocs';
-import clsx from 'clsx';
-import Router from 'next/router';
 
 import {Navbar} from '../components/Navbar';
 
@@ -11,12 +9,17 @@ export type PublicLayoutProps = {
 };
 
 export function PublicLayout(props: PublicLayoutProps): JSX.Element {
-  const {children} = props;
+  const {children, title} = props;
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col items-center justify-center">
+      <Head>
+        <title>{title} | Kindelia Hub</title>
+      </Head>
+
       <Navbar />
-      <div className={'flex w-full flex-col justify-center'}>{children}</div>
+
+      {children}
       <Footer />
     </div>
   );
