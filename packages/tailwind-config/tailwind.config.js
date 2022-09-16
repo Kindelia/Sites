@@ -19,6 +19,8 @@ module.exports = {
         springwood: '#F7F3F0',
         taupegray: '#87878A',
         gainsboro: '#DCDCDC',
+        gainsboro2: '#DDDCDA',
+        gainsboro3: '#DDDDDD'
       },
     },
   },
