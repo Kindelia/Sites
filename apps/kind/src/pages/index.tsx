@@ -31,7 +31,7 @@ export default function Home(_props: HomeProps): JSX.Element {
         </div>
         <Video embed="QJJYpsA5tv8" />
       </main>
-      <main className="flex flex-col gap-8 bg-gainsboro px-44 py-44">
+      <main className="flex flex-col gap-8 bg-gainsboro2 px-44 py-44">
         <Text className="text-mineshaft font-sans text-4xl font-bold">
           Benchmarks
         </Text>
