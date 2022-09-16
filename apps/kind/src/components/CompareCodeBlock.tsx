@@ -25,14 +25,16 @@ export function CompareCodeBlock(props: CompareCodeBlockProps) {
             <Text className="text-base text-white">Kind</Text>
           </div>
           <div
-            className="bg-springwood border-mineshaft flex h-[41px] w-full items-center justify-center rounded-t-xl border"
+            className="border-mineshaft flex h-[41px] w-full items-center justify-center rounded-t-xl border bg-transparent gap-2"
             onClick={() => setShowHaskell(true)}
           >
-            <Text className="text-mineshaft text-base">(cod.outra)</Text>
-            <ArrowIcon className="h-12 w-12 text-minHeight" />
+            <Text className="text-mineshaft text-base">
+              (cod.outra)
+            </Text>
+            <ArrowIcon className="h-3 w-3" fill="#393939" />
           </div>
         </div>
-        <div className="flex flex-col border rounded-b-3xl border-mineshaft">
+        <div className="border-mineshaft flex flex-col rounded-b-3xl border">
           <CopyBlock
             customStyle={{
               borderRadius: '0px',
@@ -50,7 +52,7 @@ export function CompareCodeBlock(props: CompareCodeBlockProps) {
           />
           <img
             src="https://github.com/Kindelia/Functional-Benchmarks/blob/master/image/runtime_list_fold_.png?raw=true"
-            className="w-[350px] border-b-2 rounded-b-3xl"
+            className="w-[350px] rounded-b-3xl border-b-2"
           />
         </div>
       </div>
